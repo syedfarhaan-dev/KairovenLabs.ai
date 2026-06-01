@@ -1749,7 +1749,7 @@ export default function App() {
                 <div className="flex flex-col gap-4 mt-2">
                   <div className="p-4 rounded-xl bg-white/[0.01] border border-white/5">
                     <span className="block text-[10px] font-mono uppercase text-gray-500 mb-1">Direct Contact Email</span>
-                    <span className="text-xs font-semibold text-brand-cyan font-mono hover:underline cursor-pointer">projects@kairovenlabs.ai</span>
+                    <span className="text-xs font-semibold text-brand-cyan font-mono hover:underline cursor-pointer">kairovenlabs@gmail.com</span>
                   </div>
                   <div className="p-4 rounded-xl bg-white/[0.01] border border-white/5">
                     <span className="block text-[10px] font-mono uppercase text-gray-500 mb-1">Operational Hours</span>
