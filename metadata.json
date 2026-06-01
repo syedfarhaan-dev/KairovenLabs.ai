@@ -1,0 +1,6 @@
+{
+  "name": "AI Innovation Platform",
+  "description": "A premium futuristic AI startup ecosystem connecting businesses with agentic solutions and engineering students with project guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
