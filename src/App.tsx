@@ -510,8 +510,8 @@ export default function App() {
           <button
             onClick={() => handleNavClick('Home', 'home')}
             className={`px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-300 cursor-pointer ${activeTab === 'Home' && currentPage === 'home'
-                ? 'text-white bg-white/[0.08] shadow-inner'
-                : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
+              ? 'text-white bg-white/[0.08] shadow-inner'
+              : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
               }`}
           >
             Home
@@ -521,8 +521,8 @@ export default function App() {
           <button
             onClick={() => handleNavClick('About', 'about')}
             className={`px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-300 cursor-pointer ${activeTab === 'About' && currentPage === 'home'
-                ? 'text-white bg-white/[0.08] shadow-inner'
-                : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
+              ? 'text-white bg-white/[0.08] shadow-inner'
+              : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
               }`}
           >
             About
@@ -538,8 +538,8 @@ export default function App() {
             <button
               onClick={() => setFeaturesDropdownOpen(!featuresDropdownOpen)}
               className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-300 outline-none cursor-pointer ${(activeTab === 'Innovation Hub' || currentPage === 'student-hub' || currentPage === 'industry-connect' || currentPage === 'events' || currentPage === 'innovation-programs')
-                  ? 'text-white bg-white/[0.08] shadow-inner'
-                  : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
+                ? 'text-white bg-white/[0.08] shadow-inner'
+                : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
                 }`}
             >
               <span>Innovation Hub</span>
@@ -591,8 +591,8 @@ export default function App() {
             <button
               onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
               className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-300 outline-none cursor-pointer ${activeTab === 'Services' && currentPage === 'home'
-                  ? 'text-white bg-white/[0.08] shadow-inner'
-                  : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
+                ? 'text-white bg-white/[0.08] shadow-inner'
+                : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
                 }`}
             >
               <span>Services</span>
@@ -646,8 +646,8 @@ export default function App() {
           <button
             onClick={() => handleNavClick('Our Team', 'team')}
             className={`px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-300 cursor-pointer ${activeTab === 'Our Team' && currentPage === 'home'
-                ? 'text-white bg-white/[0.08] shadow-inner'
-                : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
+              ? 'text-white bg-white/[0.08] shadow-inner'
+              : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
               }`}
           >
             Our Team
@@ -657,8 +657,8 @@ export default function App() {
           <button
             onClick={() => handleNavClick('Blogs', 'blogs')}
             className={`px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-300 cursor-pointer ${activeTab === 'Blogs' && currentPage === 'home'
-                ? 'text-white bg-white/[0.08] shadow-inner'
-                : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
+              ? 'text-white bg-white/[0.08] shadow-inner'
+              : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
               }`}
           >
             Blogs
@@ -668,8 +668,8 @@ export default function App() {
           <button
             onClick={() => handleNavClick('Contact', 'contact')}
             className={`px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-300 cursor-pointer ${activeTab === 'Contact' && currentPage === 'home'
-                ? 'text-white bg-white/[0.08] shadow-inner'
-                : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
+              ? 'text-white bg-white/[0.08] shadow-inner'
+              : 'text-gray-400 hover:text-white hover:bg-white/[0.03]'
               }`}
           >
             Contact
@@ -710,8 +710,8 @@ export default function App() {
                 <button
                   onClick={() => handleNavClick('Home', 'home')}
                   className={`w-full py-3 px-4 rounded-lg text-left text-sm font-medium transition-all ${activeTab === 'Home' && currentPage === 'home'
-                      ? 'bg-white/10 text-brand-cyan border-l-2 border-brand-cyan'
-                      : 'text-gray-400 hover:text-white hover:bg-white/5'
+                    ? 'bg-white/10 text-brand-cyan border-l-2 border-brand-cyan'
+                    : 'text-gray-400 hover:text-white hover:bg-white/5'
                     }`}
                 >
                   Home
@@ -721,8 +721,8 @@ export default function App() {
                 <button
                   onClick={() => handleNavClick('About', 'about')}
                   className={`w-full py-3 px-4 rounded-lg text-left text-sm font-medium transition-all border-t border-white/5 mt-2 ${activeTab === 'About' && currentPage === 'home'
-                      ? 'bg-white/10 text-brand-cyan border-l-2 border-brand-cyan'
-                      : 'text-gray-400 hover:text-white hover:bg-white/5'
+                    ? 'bg-white/10 text-brand-cyan border-l-2 border-brand-cyan'
+                    : 'text-gray-400 hover:text-white hover:bg-white/5'
                     }`}
                 >
                   About
@@ -743,8 +743,8 @@ export default function App() {
                       key={feat.name}
                       onClick={() => handleNavClick('Innovation Hub', feat.id)}
                       className={`w-full py-2.5 pl-8 pr-4 rounded-lg text-left text-xs font-semibold transition-all ${currentPage === feat.id
-                          ? 'text-brand-cyan bg-white/5 border-l-2 border-brand-cyan pl-6'
-                          : 'text-gray-400 hover:text-white hover:bg-white/5'
+                        ? 'text-brand-cyan bg-white/5 border-l-2 border-brand-cyan pl-6'
+                        : 'text-gray-400 hover:text-white hover:bg-white/5'
                         }`}
                     >
                       {feat.name}
@@ -779,8 +779,8 @@ export default function App() {
                 <button
                   onClick={() => handleNavClick('Our Team', 'team')}
                   className={`w-full py-3 px-4 rounded-lg text-left text-sm font-medium transition-all border-t border-white/5 mt-2 ${activeTab === 'Our Team' && currentPage === 'home'
-                      ? 'bg-white/10 text-white'
-                      : 'text-gray-400 hover:text-white hover:bg-white/5'
+                    ? 'bg-white/10 text-white'
+                    : 'text-gray-400 hover:text-white hover:bg-white/5'
                     }`}
                 >
                   Our Team
@@ -789,8 +789,8 @@ export default function App() {
                 <button
                   onClick={() => handleNavClick('Blogs', 'blogs')}
                   className={`w-full py-3 px-4 rounded-lg text-left text-sm font-medium transition-all border-t border-white/5 mt-2 ${activeTab === 'Blogs' && currentPage === 'home'
-                      ? 'bg-white/10 text-white shadow-sm'
-                      : 'text-gray-400 hover:text-white hover:bg-white/5'
+                    ? 'bg-white/10 text-white shadow-sm'
+                    : 'text-gray-400 hover:text-white hover:bg-white/5'
                     }`}
                 >
                   Blogs
@@ -800,8 +800,8 @@ export default function App() {
                 <button
                   onClick={() => handleNavClick('Contact', 'contact')}
                   className={`w-full py-3 px-4 rounded-lg text-left text-sm font-medium transition-all border-t border-white/5 mt-2 ${activeTab === 'Contact' && currentPage === 'home'
-                      ? 'bg-white/10 text-brand-cyan border-l-2 border-brand-cyan'
-                      : 'text-gray-400 hover:text-white hover:bg-white/5'
+                    ? 'bg-white/10 text-brand-cyan border-l-2 border-brand-cyan'
+                    : 'text-gray-400 hover:text-white hover:bg-white/5'
                     }`}
                 >
                   Contact
@@ -1302,7 +1302,7 @@ export default function App() {
                   name: "Syed Farhaan",
                   role: "Founder & CEO",
                   desc: "Leading AI innovation and building scalable futuristic solutions.",
-                  image: "public/team/farhan.jpeg",
+                  image: "/team/farhan.jpeg",
                   linkedin: "https://www.linkedin.com/in/syed-farhaan-245739259/",
                   github: "https://github.com/syedfarhaan-dev",
                   email: "farhaansyed34@gmail.com",
@@ -1316,7 +1316,7 @@ export default function App() {
                   name: "Boini Vamshi",
                   role: "Co-Founder & COO",
                   desc: "Managing operations and driving strategic execution.",
-                  image: "public/team/vamshi.jpeg",
+                  image: "/team/vamshi.jpeg",
                   linkedin: "https://www.linkedin.com/in/vamshi-boini-a9b4b0215/",
                   github: "https://github.com/vamshi-boini",
                   email: "boini.vamshi01@gmail.com ",
@@ -1427,7 +1427,7 @@ export default function App() {
                   name: "Likhitha M",
                   role: "Head of Marketing & Media Relations",
                   desc: "Building brand presence and managing media growth.",
-                  image: "public/team/likhitha.jpeg",
+                  image: "/team/likhitha.jpeg",
                   linkedin: "https://www.linkedin.com/in/likhitha-m-06031532b/",
                   github: "https://github.com/likhitham78",
                   email: "likhitham749@gmail.com",
@@ -1439,7 +1439,7 @@ export default function App() {
                   name: "Naga Teja",
                   role: "Business Strategy Lead",
                   desc: "Designing growth-focused business strategies.",
-                  image: "public/team/Teja.jpeg",
+                  image: "/team/Teja.jpeg",
                   linkedin: "https://www.linkedin.com/in/goli-nagateja-reddy-b35579378/",
                   github: "https://github.com/TejaReddiee07",
                   email: "nagatejareddygoli@gmail.com",
@@ -1451,7 +1451,7 @@ export default function App() {
                   name: "Yashwanth",
                   role: "Growth Strategist",
                   desc: "Driving growth initiatives and expanding community reach.",
-                  image: "public/team/yashwanth.jpeg",
+                  image: "/team/yashwanth.jpeg",
                   linkedin: "https://www.linkedin.com/in/yashwanth-y-s-2171882ab",
                   github: "https://github.com/yashugowda544-bit",
                   email: "yashugowda544@gmail.com",
@@ -1463,7 +1463,7 @@ export default function App() {
                   name: "Darpan",
                   role: "Partnerships & Tech Strategist",
                   desc: "Building strategic collaborations and technology partnerships.",
-                  image: "public/team/Darpan.jpeg",
+                  image: "/team/Darpan.jpeg",
                   linkedin: "https://www.linkedin.com/in/darpan-dhande-7339991b3/",
                   github: "https://github.com/DarpanDhande",
                   email: "Darpanddhande2005@gmail.com",
