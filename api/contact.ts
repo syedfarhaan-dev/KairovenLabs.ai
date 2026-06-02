@@ -21,7 +21,7 @@ const getSupabaseAdminClient = () => {
   const url = process.env.SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY;
   if (!url || !key) {
-    return null; 
+    return null;
   }
   return createClient(url, key);
 };
@@ -105,7 +105,7 @@ export default async function handler(req: any, res: any) {
 
     // Save to Supabase
     const supabase = getSupabaseAdminClient();
-    
+
     if (supabase) {
       const { data, error } = await supabase
         .from("contact_leads")
@@ -132,7 +132,7 @@ export default async function handler(req: any, res: any) {
     }
 
     // Prepare Professional Email Notification Layouts
-    const adminEmail = process.env.ADMIN_EMAIL || "projects.kairovenlabs@gmail.com";
+    const adminEmail = process.env.ADMIN_EMAIL || "kairovenlabs@gmail.com";
     const brandColor = "#00FFFF"; // Cyan
     const secondaryBrandColor = "#8A2BE2"; // Visual Purple
     const year = new Date().getFullYear();

@@ -1623,7 +1623,7 @@ export default function App() {
                   title: "What Is Agentic AI and Why It Matters",
                   category: "Agentic AI",
                   desc: "Explore the future of autonomous AI systems and how Agentic AI is changing the way digital solutions operate.",
-                  image: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&q=80&w=600&h=400",
+                  image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600&h=400",
                   date: "May 18, 2026",
                   readTime: "7 min read",
                   author: "KairovenLabs.ai Team",
