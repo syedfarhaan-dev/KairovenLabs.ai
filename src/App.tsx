@@ -1278,7 +1278,7 @@ export default function App() {
             </div>
 
             {/* Top Row: Founders / Leadership with larger highlight cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
               {[
                 {
                   name: "Syed Farhaan",
@@ -1307,6 +1307,20 @@ export default function App() {
                   borderColor: "border-brand-cyan/20 group-hover:border-brand-cyan/50",
                   tagColor: "bg-brand-cyan/10 border-brand-cyan/25 text-brand-cyan",
                   label: "CO-FOUNDER"
+                },
+                {
+                  name:"Shamanth M",
+                  role:"CTO",
+                  desc:"Leading AI innovation and building scalable futuristic solutions.",
+                  image:"/team/shamanth.png",
+                  linkedin:"https://www.linkedin.com/in/shamanth-m-05537b264/",
+                  github:"https://github.com/Shamanthking",
+                  email:"shamanth2626@gmail.com",
+                  glowColor:"from-brand-purple/20 via-brand-indigo/10 to-transparent",
+                  accentGlow:"rgba(168, 85, 247, 0.45)",
+                  borderColor:"border-brand-purple/20 group-hover:border-brand-purple/50",
+                  tagColor:"bg-brand-purple/10 border-brand-purple/25 text-brand-purple",
+                  label:"CO-FOUNDER"
                 }
               ].map((member, idx) => (
                 <motion.div
