@@ -474,30 +474,12 @@ export default function App() {
         {/* Left Side: Brand Logo & Name */}
         <div className="flex items-center gap-3 cursor-pointer group" onClick={() => handleNavClick('Home', 'home')}>
           {/* Futuristic Kairoven Labs Vector Premium Logo */}
-          <div className="relative w-9 h-9 flex items-center justify-center shrink-0">
-            {/* Pulsating glowing outer ring */}
-            <span className="absolute inset-0 rounded-full border border-brand-cyan/40 scale-100 group-hover:scale-110 group-hover:border-brand-purple/60 transition-all duration-500 animate-[pulse_2s_infinite]" />
-            <span className="absolute inset-1 rounded-full border border-brand-indigo/30 scale-100 group-hover:scale-95 transition-all duration-500" strokeDasharray="3 3" />
-
-            {/* Crisp vector logo representing 'K' and labs connection nodes */}
-            <svg
-              className="w-5 h-5 text-brand-cyan filter drop-shadow-[0_0_5px_rgba(34,211,238,0.7)] group-hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] group-hover:rotate-12 transition-all duration-500"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 4V20M6 12L14 4M6 12L15 20 M11 12L17 6M11 12L18 18"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="group-hover:stroke-brand-purple transition-colors duration-500"
-              />
-              <circle cx="6" cy="12" r="1.5" fill="#ffffff" />
-              <circle cx="14" cy="4" r="1.2" fill="#ffffff" />
-              <circle cx="15" cy="20" r="1.2" fill="#ffffff" />
-            </svg>
+          <div className="relative w-10 h-10 flex items-center justify-center shrink-0">
+            <img
+              src="/logo.png"
+              alt="Kairoven Labs"
+              className="w-full h-full object-contain transition-all duration-500 group-hover:scale-110"
+            /> 
           </div>
           <span className="font-display font-semibold tracking-wider text-white text-lg group-hover:text-brand-cyan transition-colors duration-300">
             KairovenLabs<span className="text-brand-cyan font-light text-sm font-mono tracking-widest ml-1 bg-brand-cyan/10 px-1.5 py-0.5 rounded-md">.ai</span>

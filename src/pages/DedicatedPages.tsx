@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Trophy, 
-  ArrowLeft, 
-  Check, 
-  Cpu, 
-  Terminal, 
-  Calendar, 
-  Sparkles, 
-  Clock, 
-  FileText, 
-  Layers, 
-  Hash, 
+import {
+  Trophy,
+  ArrowLeft,
+  Check,
+  Cpu,
+  Terminal,
+  Calendar,
+  Sparkles,
+  Clock,
+  FileText,
+  Layers,
+  Hash,
   Search,
   ChevronRight,
   User,
@@ -83,7 +83,7 @@ export function StudentHubPage({
   }, []);
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -91,12 +91,12 @@ export function StudentHubPage({
       className="pt-24 pb-28 px-6 lg:px-16 relative overflow-hidden bg-[#030303] min-h-screen"
     >
       <FuturisticBackground primaryColor="brand-purple" secondaryColor="brand-cyan" />
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Navigation Breadcrumb */}
         <div className="flex items-center gap-3 mb-10">
-          <button 
+          <button
             onClick={() => onNavigateHome('home')}
             className="flex items-center gap-2 text-xs font-mono tracking-wider text-gray-500 hover:text-brand-purple transition-colors cursor-pointer group"
           >
@@ -108,20 +108,20 @@ export function StudentHubPage({
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-4">
-          
+
           {/* Left Column: Mission Description */}
           <div className="lg:col-span-5 flex flex-col gap-6">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-brand-purple/40 bg-brand-purple/5 text-brand-purple text-[10px] font-mono tracking-widest uppercase self-start">
               <Trophy className="w-3 h-3 text-brand-purple" />
               <span>Next Gen Support Hub</span>
             </div>
-            
+
             <h1 className="font-display text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.1]">
               Empowering the Engineering Mindset
             </h1>
-            
+
             <p className="text-gray-450 text-sm md:text-base leading-relaxed">
-              Academic institutions lay down solid mathematical theory, but actual commercial industries value live application delivery, real integration schemas, and secure database parameters. 
+              Academic institutions lay down solid mathematical theory, but actual commercial industries value live application delivery, real integration schemas, and secure database parameters.
             </p>
 
             <p className="text-gray-450 text-sm md:text-base leading-relaxed">
@@ -159,9 +159,9 @@ export function StudentHubPage({
           {/* Right Column: Animated Image and Encouraging Quotes */}
           <div className="lg:col-span-7 flex flex-col gap-8 relative">
             <div className="absolute top-0 right-10 w-[120px] h-[2px] bg-gradient-to-r from-transparent via-brand-purple/40 to-transparent" />
-            
+
             {/* Image Section (Animated with floating and glow accent) */}
-            <motion.div 
+            <motion.div
               animate={{
                 y: [0, -8, 0],
               }}
@@ -173,17 +173,17 @@ export function StudentHubPage({
               className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group bg-black/40 p-1"
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10 opacity-75" />
-              
+
               {/* Glow backdrop decorator */}
               <div className="absolute -inset-1 bg-gradient-to-r from-[#a855f7]/15 via-[#22d3ee]/10 to-[#6366f1]/15 blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500 rounded-2xl" />
-              
+
               <img
                 src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800"
                 alt="KairovenLabs Student Innovation Hub"
                 className="w-full h-[260px] md:h-[320px] object-cover rounded-xl relative z-10 transition-transform duration-700 group-hover:scale-[1.02]"
                 referrerPolicy="no-referrer"
               />
-              
+
               <div className="absolute bottom-6 left-6 right-6 z-20 flex flex-col gap-2">
                 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-brand-cyan/30 bg-black/70 text-brand-cyan text-[10px] font-mono tracking-widest uppercase self-start backdrop-blur-md font-semibold">
                   <Sparkles className="w-3.5 h-3.5 text-brand-cyan animate-pulse" />
@@ -197,7 +197,7 @@ export function StudentHubPage({
 
             {/* Encouraging Quotes Carousel Section */}
             <div className="bg-[#020202] border border-white/5 rounded-2xl p-6 md:p-8 relative min-h-[220px] flex flex-col justify-between overflow-hidden shadow-xl">
-              
+
               {/* Subtle background quotes sign watermark */}
               <div className="absolute -top-6 -right-2 text-white/[0.015] text-[12rem] font-serif select-none pointer-events-none line-height-none">
                 “
@@ -242,16 +242,15 @@ export function StudentHubPage({
                     <button
                       key={idx}
                       onClick={() => setActiveQuoteIdx(idx)}
-                      className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                        activeQuoteIdx === idx 
-                          ? 'bg-brand-cyan w-4' 
-                          : 'bg-white/10 hover:bg-white/25'
-                      }`}
+                      className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${activeQuoteIdx === idx
+                        ? 'bg-brand-cyan w-4'
+                        : 'bg-white/10 hover:bg-white/25'
+                        }`}
                       aria-label={`Go to quote ${idx + 1}`}
                     />
                   ))}
                 </div>
-                
+
                 <button
                   onClick={() => onNavigateHome('contact')}
                   className="text-[10px] font-mono tracking-widest text-brand-cyan hover:text-white uppercase flex items-center gap-1 transition-colors cursor-pointer group"
@@ -291,7 +290,7 @@ export function IndustryConnectPage({ onNavigateHome }: IndustryConnectProps) {
       icon: Users,
       color: "brand-purple",
       description: "Direct guidance from seasoned technology directors, AI developers, and startup founders on a weekly cadence.",
-      metric: "40+ Active Mentors",
+      metric: "10+ Active Mentors",
       badge: "Guidance"
     },
     {
@@ -299,7 +298,7 @@ export function IndustryConnectPage({ onNavigateHome }: IndustryConnectProps) {
       icon: Briefcase,
       color: "brand-indigo",
       description: "Fast-track internship pipelines and direct career placements in modern engineering teams and SaaS ventures.",
-      metric: "94% Placement Success",
+      metric: "Help to get Placement",
       badge: "Careers"
     },
     {
@@ -315,7 +314,7 @@ export function IndustryConnectPage({ onNavigateHome }: IndustryConnectProps) {
       icon: Cpu,
       color: "brand-purple",
       description: "Tackle real business challenges and production integration bottlenecks using modern AI agents and systems.",
-      metric: "$50K+ Tech Pilots Funded",
+      metric: "10K+ Tech Pilots Funded",
       badge: "R&D Lab"
     },
     {
@@ -323,7 +322,7 @@ export function IndustryConnectPage({ onNavigateHome }: IndustryConnectProps) {
       icon: Terminal,
       color: "brand-indigo",
       description: "Participate in collaborative code slams, system architectural reviews, and local developer meetups.",
-      metric: "1,200+ Developers",
+      metric: "50+ Developers",
       badge: "Community"
     },
     {
@@ -345,7 +344,7 @@ export function IndustryConnectPage({ onNavigateHome }: IndustryConnectProps) {
   ];
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -353,12 +352,12 @@ export function IndustryConnectPage({ onNavigateHome }: IndustryConnectProps) {
       className="pt-24 pb-28 px-6 lg:px-16 relative overflow-hidden bg-[#030303] min-h-screen"
     >
       <FuturisticBackground primaryColor="brand-cyan" secondaryColor="brand-indigo" />
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Navigation Breadcrumb */}
         <div className="flex items-center gap-3 mb-10">
-          <button 
+          <button
             onClick={() => onNavigateHome('home')}
             className="flex items-center gap-2 text-xs font-mono tracking-wider text-gray-500 hover:text-brand-cyan transition-colors cursor-pointer group"
           >
@@ -445,7 +444,7 @@ export function InnovationProgramsPage({ onNavigateHome }: InnovationProgramsPro
       icon: Trophy,
       color: "brand-purple",
       description: "High-intensity hackfests and tech challenges built to pressure-test agentic behaviors and automation pipelines.",
-      metric: "$15K+ Active Prize Pools",
+      metric: "10K+ Active Prize Pools",
       badge: "Challenges"
     },
     {
@@ -461,7 +460,7 @@ export function InnovationProgramsPage({ onNavigateHome }: InnovationProgramsPro
       icon: Layers,
       color: "brand-cyan",
       description: "Translating experimental code and MVPs into scalable SaaS web products with cloud credits and advisory.",
-      metric: "4 Web Apps Launched",
+      metric: "Under Developement",
       badge: "Incubation"
     },
     {
@@ -477,7 +476,7 @@ export function InnovationProgramsPage({ onNavigateHome }: InnovationProgramsPro
       icon: Code,
       color: "brand-indigo",
       description: "Sponsored pipelines supporting collaborative contributions to core tooling, libraries, and open-source models.",
-      metric: "120+ Commits Accepted",
+      metric: "100+ Commits Accepted",
       badge: "Open Source"
     },
     {
@@ -507,7 +506,7 @@ export function InnovationProgramsPage({ onNavigateHome }: InnovationProgramsPro
   ];
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -515,12 +514,12 @@ export function InnovationProgramsPage({ onNavigateHome }: InnovationProgramsPro
       className="pt-24 pb-28 px-6 lg:px-16 relative overflow-hidden bg-[#030303] min-h-screen"
     >
       <FuturisticBackground primaryColor="brand-purple" secondaryColor="brand-indigo" />
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Navigation Breadcrumb */}
         <div className="flex items-center gap-3 mb-10">
-          <button 
+          <button
             onClick={() => onNavigateHome('home')}
             className="flex items-center gap-2 text-xs font-mono tracking-wider text-gray-500 hover:text-brand-purple transition-colors cursor-pointer group"
           >
@@ -642,7 +641,7 @@ export function EventsPage({
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -650,12 +649,12 @@ export function EventsPage({
       className="pt-24 pb-28 px-6 lg:px-16 relative overflow-hidden bg-[#030303] min-h-screen"
     >
       <FuturisticBackground primaryColor="brand-cyan" secondaryColor="brand-purple" />
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Navigation Breadcrumb */}
         <div className="flex items-center gap-3 mb-10">
-          <button 
+          <button
             onClick={() => onNavigateHome('home')}
             className="flex items-center gap-2 text-xs font-mono tracking-wider text-gray-500 hover:text-brand-purple transition-colors cursor-pointer group"
           >
@@ -701,7 +700,7 @@ export function EventsPage({
                         {ev.type}
                       </span>
                     </div>
-                    
+
                     <h3 className="font-display text-lg font-semibold text-white tracking-wide mb-2 group-hover:text-brand-purple transition-colors">
                       {ev.title}
                     </h3>
@@ -719,7 +718,7 @@ export function EventsPage({
                       <Sparkles className="w-3.5 h-3.5" />
                       Notify Me
                     </button>
-                    
+
                     <button
                       onClick={() => onNavigateHome('contact')}
                       className="px-5 py-2.5 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-xl font-semibold text-xs tracking-wider transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer active:scale-98 w-full sm:w-auto text-nowrap"
@@ -740,7 +739,7 @@ export function EventsPage({
         {isNotifyModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
             {/* Backdrop with elegant blur */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -749,7 +748,7 @@ export function EventsPage({
             />
 
             {/* Modal Body */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -761,7 +760,7 @@ export function EventsPage({
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-brand-purple/10 blur-[50px] pointer-events-none rounded-full" />
 
               {/* Close Button */}
-              <button 
+              <button
                 onClick={() => setIsNotifyModalOpen(false)}
                 className="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors cursor-pointer"
               >
@@ -787,8 +786,8 @@ export function EventsPage({
                       <label className="block text-[10px] font-mono uppercase tracking-widest text-gray-500 mb-1.5 font-semibold">Your Name</label>
                       <div className="relative">
                         <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600" />
-                        <input 
-                          type="text" 
+                        <input
+                          type="text"
                           required
                           value={notifyName}
                           onChange={(e) => setNotifyName(e.target.value)}
@@ -802,8 +801,8 @@ export function EventsPage({
                       <label className="block text-[10px] font-mono uppercase tracking-widest text-gray-500 mb-1.5 font-semibold">Your Email</label>
                       <div className="relative">
                         <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600" />
-                        <input 
-                          type="email" 
+                        <input
+                          type="email"
                           required
                           value={notifyEmail}
                           onChange={(e) => setNotifyEmail(e.target.value)}
@@ -813,7 +812,7 @@ export function EventsPage({
                       </div>
                     </div>
 
-                    <button 
+                    <button
                       type="submit"
                       className="w-full bg-brand-cyan hover:bg-brand-cyan/90 text-black py-3 rounded-xl font-semibold text-xs tracking-wider transition-all duration-300 mt-2 shadow-[0_0_20px_rgba(6,182,212,0.3)] active:scale-98 cursor-pointer"
                     >
@@ -822,7 +821,7 @@ export function EventsPage({
                   </form>
                 </>
               ) : (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   className="flex flex-col items-center justify-center text-center py-6"
@@ -838,7 +837,7 @@ export function EventsPage({
                     Agent <span className="text-brand-cyan font-bold">{notifyName}</span> added to the list. Updates for <span className="text-brand-purple">{selectedEventName}</span> are now directed to <span className="text-white underline">{notifyEmail}</span>.
                   </p>
 
-                  <button 
+                  <button
                     onClick={() => setIsNotifyModalOpen(false)}
                     className="mt-6 px-6 py-2.5 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-xl text-xs font-mono tracking-wider transition-all cursor-pointer"
                   >
